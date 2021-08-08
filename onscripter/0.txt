@@ -1,0 +1,308 @@
+;
+;一个中文DEMO
+;
+
+;
+;无序的初始化部分
+;
+*define
+
+;
+;插件
+;
+spi "jpgplgin.dll|jpg"
+arc "arc.sar|scrunarc.dll"
+spi "nbzplgin.dll|nbz"
+soundpressplgin "nbzplgin.dll|nbz"
+
+;
+;窗口标题
+;
+caption "水色角色介绍DEMO1"
+
+;
+;效果
+;
+effect 2,6,500
+effect 3,10,500
+effect 4,13,3000
+effect 5,10,1000
+effect 6,6,500
+windoweffect 10,200
+
+;
+;参数设置
+;
+;clickstr 等待標誌,翻頁參數
+;為1時，顯示到屏幕（或對話框）滿為止，自動翻頁。
+;為2時，到離可容納字數還有1行時翻頁。
+;為3時，到離可容納字數還有2行時翻頁。
+clickstr "",2
+;
+savenumber 20
+;
+menusetwindow 15,18,2,2,0,1,#808080
+;
+mode_ext
+;
+defaultspeed 80,25,1
+;
+;underline 395
+;
+selectcolor #EEFCFD,#99CCFB
+;
+cdfadeout 1000
+
+;
+;修改窗口菜单
+;
+;0画面 1字体 2显示样式 3文字速度 4声音
+;5快进到下一选项 6自动模式 7CD音轨
+;8版本情报 10终了
+;
+killmenu 7
+killmenu 4
+
+;
+;右键菜单
+;
+rmenu "前进到下一个选择肢",skip,"消去窗口",windowerase,"回到开始",reset
+;============================================================
+
+game
+*start
+;menu_full
+setcursor 0,":l/4,160,0;cursor0.bmp",0,0
+setcursor 1,":l/4,160,0;cursor0.bmp",0,2
+erasetextwindow 1
+
+
+;bg "omake\p_13.jpg",3
+
+bg black,5
+
+setwindow 230,200,35,20,16,14,0,2,25,1,1,#ffffff,0,0,639,479
+!s100
+
+▼　猫猫软件@　
+▼　汉化制作LENIN  \
+bg white,3
+
+setwindow 80,378,35,20,22,22,0,5,25,1,1,":a;waku3.bmp",55,365
+!sd
+
+;〓＿＿＿＿スタート＿＿\
+
+;play "*3"
+
+雨后初霁@
+有一股令人怀念的石灰气味\
+
+bg "bs.jpg",5
+
+;play "*17"
+waveloop "shiro.wav"
+
+如果抬头仰视的话，那是冬天的天空。
+始终清澈的冬天的蓝天，很高，很高。\
+
+bg white,3
+
+「哇啊，好冷呢」\
+
+bg "m2.jpg",5
+
+「看啊，停了哟」\
+
+bg "bs.jpg",5
+
+然后，白色的呼吸扩展开来，
+淡淡地溶入天空。\
+
+;BG　白
+
+……并且，是从那天起就没有改变的笑容的颜色…\
+
+bg white,5
+bg "t1.jpg",5
+bg "t2.jpg",5
+bg "t2h.jpg",5
+
+click
+
+;〓＿＿＿過去＿＿＿＿＿\
+
+bg black,3
+!w1000
+
+『哎，快打招呼啊』\
+
+;■絵指定２　泣く妹　ラフでも可\
+
+;bg white,3
+;bg black,3
+
+在眼前的是，就像要哭出来的脸。
+没有见到过的小女孩，就在我眼前。\
+
+bg white,3
+bg "k2.jpg",5
+　　（哇啊啊）\
+
+『喂，不好好相处吗？』\
+
+　　（哇啊啊）\
+
+;＿＿＿＿＿＿＿＿＿＿
+
+;BG　黒
+
+;bg white,3
+bg black,3
+
+接下来我的房间也，@
+不只是属于我的东西了。\
+
+;＿＿＿＿＿＿＿＿＿＿
+
+bg white,5
+
+「哇啊啊」\
+
+bg "k2.jpg",5
+而且，她马上就哭了。\
+
+bg white,3
+
+（哇啊啊）\
+
+今天这家伙也在哭着。\
+
+bg black,3
+
+总于有一天，实在没有办法的我，
+把重要的收藏分给了她。\
+
+「是吧？」
+!w500
+textclear
+
+bg white,5
+
+　　　（呜哇哇）\
+
+bg "k2.jpg",3
+「（抽泣），妈妈…」\
+
+;＿＿＿＿＿＿＿＿＿＿\
+
+bg black,3
+
+给我的回答是那满面的笑容。\
+
+bg white,3
+
+我光是在边上看着　
+她歪歪扭扭地握着铅笔开始写。\
+
+bg "k3.jpg",5
+
+…一定这家伙非常高兴吧。
+就像那样，写着给妈妈的信。\
+
+;＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
+
+bg black,3
+
+然后那家伙好像每日都会
+去检查着家里的邮箱。\
+
+bg "k1.jpg",5
+高高兴兴地跑向门口
+然后寂寞地回来。\
+
+bg black,3
+
+「？」\
+『长大的话就会明白了』\
+
+bg "k1.jpg",5
+
+因为是…，想让我开心吧。\
+
+bg black,3
+
+我又用仅存的零花钱
+买了一张明信片。\
+
+bg white,3
+bg black,3
+
+第二天。
+我一直在门口等着。\
+
+bg white,5
+bg "k4.jpg",5
+
+;＿＿↓ボツ＿＿＿＿＿＿＿＿\
+
+;bg black,3
+
+然后…@非常地高兴。\
+
+bg white,5
+
+（谢谢…）\
+
+（谢谢，哥）()\
+
+bg "k5.jpg",5
+…那是第一次…@被她那样叫。\
+
+bg white,3
+;＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\
+
+bg "bs.jpg",5
+
+「…怎么了？」\
+
+bg "m1.jpg",5
+erasetextwindow 0
+
+「不抓紧的话要迟到了哦？」\
+「哎呀，是啊！」\
+
+bg "m3.jpg",3
+
+「什么事，哥？」\
+
+bg "m4.jpg",3
+erasetextwindow 1
+「呃，呃！？」\
+
+bg white,5
+bg "bs.jpg",5
+
+如果抬头仰视的话，那是冬日的天空。\
+纯白的呼吸溶入天空的蔚蓝中去。\
+
+bg "k6.jpg",5
+与那天一样
+浅浅的颜色正在没有至尽地扩大着…\
+
+bg white,5
+bg "end1.jpg",5
+bg "end1h.jpg",5
+
+click
+
+bg "end2.jpg",5
+bg "end2h.jpg",5
+
+click
+click
+
+bg white,5
+stop
+
+goto *start
