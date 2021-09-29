@@ -18,6 +18,7 @@ EXT_FLAGS += -s USE_SDL_TTF=2
 EXT_FLAGS += -s USE_SDL_IMAGE=2    
 EXT_FLAGS += -s USE_SDL_MIXER=2
 EXT_FLAGS += -s USE_BZIP2=1
+EXT_FLAGS += -s SDL2_MIXER_FORMATS='["ogg","mp3"]'
 EXT_FLAGS += -s SDL2_IMAGE_FORMATS='["bmp","png","xpm","jpg"]'
 
 # recommended: smpeg
