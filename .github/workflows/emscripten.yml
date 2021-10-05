@@ -1,0 +1,39 @@
+name: emscripten CI
+
+env:
+  EM_VERSION: 2.0.31
+  EM_CACHE_FOLDER: 'emsdk-cache'
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup cache
+      id: cache-system-libraries
+      uses: actions/cache@v2
+      with:
+        path: ${{env.EM_CACHE_FOLDER}}
+        key: ${{env.EM_VERSION}}-${{ runner.os }}
+    - uses: wcwac/setup-emsdk@v11
+      with:
+        version: ${{env.EM_VERSION}}
+        update-tags: true
+        actions-cache-folder: ${{env.EM_CACHE_FOLDER}}
+    - name: check
+      run: emcc -v
+    - name: make
+      run: make
+    - uses: actions/upload-artifact@v2
+      with:
+        path: |
+          ./onscripter.js
+          ./onscripter.wasm
