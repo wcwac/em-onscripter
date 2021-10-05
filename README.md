@@ -3,6 +3,9 @@
 
 An emscripten port of ONScripter-jh
 
+## Demo
+
+https://wcwac.github.io/em-onscripter/onscripter.html
 
 ## Screenshots
 
