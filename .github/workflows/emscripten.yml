@@ -32,8 +32,10 @@ jobs:
       run: emcc -v
     - name: make
       run: make
+    - name: move output files
+      run: |
+        mkdir output
+        mv onscripter.* output
     - uses: actions/upload-artifact@v2
       with:
-        path: |
-          ./onscripter.js
-          ./onscripter.wasm
+        path: output
