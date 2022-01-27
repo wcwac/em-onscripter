@@ -12,7 +12,7 @@ TARGET = onscripter$(EXESUFFIX)
 EXT_OBJS = 
 
 # mandatory: SDL, SDL_ttf, SDL_image, SDL_mixer, bzip2
-DEFS = -DLINUX -DUSE_SDL_RENDERER -DNDEBUG
+DEFS = -DLINUX -DUSE_SDL_RENDERER -DNDEBUG -DWASM
 EXT_FLAGS =  -s USE_SDL=2  
 EXT_FLAGS += -s USE_SDL_TTF=2
 EXT_FLAGS += -s USE_SDL_IMAGE=2    
@@ -39,10 +39,11 @@ DEFS += -DUSE_OGG_VORBIS -DINTEGER_OGG_VORBIS
 # EXT_OBJS += LUAHandler$(OBJSUFFIX)
 
 # for emscripten em++
-CC = em++ 
+CC = em++
 LD = em++ 
 LD += -s ASYNCIFY
-LD += -s ALLOW_MEMORY_GROWTH=1
+LD += -s ALLOW_MEMORY_GROWTH=1  
+LD += -s ENVIRONMENT=web
 LD += --preload-file ./onscripter@/
 LD += -o
 

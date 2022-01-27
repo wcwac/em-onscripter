@@ -296,6 +296,8 @@ void parseOption(int argc, char *argv[]) {
             else if ( !strcmp(argv[0]+1, "-compatible") ){
                 ons.setCompatibilityMode();
             }
+#endif
+#if defined(ANDROID) || defined(WASM)
             else if ( !strcmp(argv[0] + 1, "-save-dir") ){
                 argc--;
                 argv++;

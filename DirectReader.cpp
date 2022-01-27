@@ -120,7 +120,7 @@ FILE *DirectReader::fopen(const char *path, const char *mode)
     FILE *fp = ::fopen( file_full_path, mode );
     if (fp) return fp;
 
-#if !defined(WIN32) && !defined(_WIN32) && !defined(MACOS9) && !defined(PSP) && !defined(__OS2__)
+#if !defined(WIN32) && !defined(_WIN32) && !defined(MACOS9) && !defined(PSP) && !defined(__OS2__) && !defined(WASM)
     char *cur_p = NULL;
     DIR *dp = NULL;
     len = strlen(archive_path);
