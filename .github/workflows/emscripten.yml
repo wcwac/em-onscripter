@@ -1,7 +1,6 @@
 name: emscripten CI
 
 env:
-  EM_VERSION: 3.1.13
   EM_CACHE_FOLDER: 'emsdk-cache'
 
 on:
@@ -22,10 +21,9 @@ jobs:
       with:
         path: ${{env.EM_CACHE_FOLDER}}
         key: ${{env.EM_VERSION}}-${{ runner.os }}
-    - uses: wcwac/setup-emsdk@v11
+    - uses: mymindstorm/setup-emsdk@v11
       with:
         version: ${{env.EM_VERSION}}
-        update-tags: true
         actions-cache-folder: ${{env.EM_CACHE_FOLDER}}
     - name: check
       run: emcc -v
