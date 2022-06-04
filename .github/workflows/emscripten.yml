@@ -1,6 +1,7 @@
 name: emscripten CI
 
 env:
+  EM_VERSION: latest
   EM_CACHE_FOLDER: 'emsdk-cache'
 
 on:
