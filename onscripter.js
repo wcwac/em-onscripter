@@ -186,7 +186,7 @@ var Module = typeof Module != 'undefined' ? Module : {};
     }
 
     }
-    loadPackage({"files": [{"filename": "/k5.jpg", "start": 0, "end": 85965}, {"filename": "/shiro.wav", "start": 85965, "end": 8920135, "audio": 1}, {"filename": "/envdata", "start": 8920135, "end": 8920186}, {"filename": "/t2.jpg", "start": 8920186, "end": 9089725}, {"filename": "/default.ttf", "start": 9089725, "end": 18457101}, {"filename": "/doffcur.bmp", "start": 18457101, "end": 18458755}, {"filename": "/k6.jpg", "start": 18458755, "end": 18607050}, {"filename": "/k3.jpg", "start": 18607050, "end": 18935383}, {"filename": "/bs.jpg", "start": 18935383, "end": 19078718}, {"filename": "/0.txt", "start": 19078718, "end": 19082368}, {"filename": "/dframe.bmp", "start": 19082368, "end": 19137848}, {"filename": "/cursor0.bmp", "start": 19137848, "end": 19150190}, {"filename": "/end2.jpg", "start": 19150190, "end": 19344830}, {"filename": "/k2.jpg", "start": 19344830, "end": 19650056}, {"filename": "/t1.jpg", "start": 19650056, "end": 19718624}, {"filename": "/doncur.bmp", "start": 19718624, "end": 19720278}, {"filename": "/k4.jpg", "start": 19720278, "end": 20052111}, {"filename": "/end1h.jpg", "start": 20052111, "end": 20169236}, {"filename": "/end2h.jpg", "start": 20169236, "end": 20251103}, {"filename": "/m3.jpg", "start": 20251103, "end": 20556370}, {"filename": "/waku3.bmp", "start": 20556370, "end": 20815626}, {"filename": "/end1.jpg", "start": 20815626, "end": 21170861}, {"filename": "/m2.jpg", "start": 21170861, "end": 21477554}, {"filename": "/m1.jpg", "start": 21477554, "end": 21784307}, {"filename": "/k1.jpg", "start": 21784307, "end": 22134184}, {"filename": "/t2h.jpg", "start": 22134184, "end": 22341872}, {"filename": "/m4.jpg", "start": 22341872, "end": 22648722}], "remote_package_size": 22648722, "package_uuid": "11a5a68a-1856-48ed-a431-812a6f43792b"});
+    loadPackage({"files": [{"filename": "/k5.jpg", "start": 0, "end": 85965}, {"filename": "/shiro.wav", "start": 85965, "end": 8920135, "audio": 1}, {"filename": "/envdata", "start": 8920135, "end": 8920186}, {"filename": "/t2.jpg", "start": 8920186, "end": 9089725}, {"filename": "/default.ttf", "start": 9089725, "end": 18457101}, {"filename": "/doffcur.bmp", "start": 18457101, "end": 18458755}, {"filename": "/k6.jpg", "start": 18458755, "end": 18607050}, {"filename": "/k3.jpg", "start": 18607050, "end": 18935383}, {"filename": "/bs.jpg", "start": 18935383, "end": 19078718}, {"filename": "/0.txt", "start": 19078718, "end": 19082368}, {"filename": "/dframe.bmp", "start": 19082368, "end": 19137848}, {"filename": "/cursor0.bmp", "start": 19137848, "end": 19150190}, {"filename": "/end2.jpg", "start": 19150190, "end": 19344830}, {"filename": "/k2.jpg", "start": 19344830, "end": 19650056}, {"filename": "/t1.jpg", "start": 19650056, "end": 19718624}, {"filename": "/doncur.bmp", "start": 19718624, "end": 19720278}, {"filename": "/k4.jpg", "start": 19720278, "end": 20052111}, {"filename": "/end1h.jpg", "start": 20052111, "end": 20169236}, {"filename": "/end2h.jpg", "start": 20169236, "end": 20251103}, {"filename": "/m3.jpg", "start": 20251103, "end": 20556370}, {"filename": "/waku3.bmp", "start": 20556370, "end": 20815626}, {"filename": "/end1.jpg", "start": 20815626, "end": 21170861}, {"filename": "/m2.jpg", "start": 21170861, "end": 21477554}, {"filename": "/m1.jpg", "start": 21477554, "end": 21784307}, {"filename": "/k1.jpg", "start": 21784307, "end": 22134184}, {"filename": "/t2h.jpg", "start": 22134184, "end": 22341872}, {"filename": "/m4.jpg", "start": 22341872, "end": 22648722}], "remote_package_size": 22648722, "package_uuid": "66c34262-9405-49f0-9908-474d4a273680"});
 
   })();
 
@@ -9669,9 +9669,6 @@ var dynCall_iiiiii = Module["dynCall_iiiiii"] = createExportWrapper("dynCall_iii
 var dynCall_i = Module["dynCall_i"] = createExportWrapper("dynCall_i");
 
 /** @type {function(...*):?} */
-var dynCall_viiii = Module["dynCall_viiii"] = createExportWrapper("dynCall_viiii");
-
-/** @type {function(...*):?} */
 var dynCall_iiiiiii = Module["dynCall_iiiiiii"] = createExportWrapper("dynCall_iiiiiii");
 
 /** @type {function(...*):?} */
@@ -9679,6 +9676,9 @@ var dynCall_viiiiiiii = Module["dynCall_viiiiiiii"] = createExportWrapper("dynCa
 
 /** @type {function(...*):?} */
 var dynCall_iiiiiiii = Module["dynCall_iiiiiiii"] = createExportWrapper("dynCall_iiiiiiii");
+
+/** @type {function(...*):?} */
+var dynCall_viiii = Module["dynCall_viiii"] = createExportWrapper("dynCall_viiii");
 
 /** @type {function(...*):?} */
 var dynCall_viiiii = Module["dynCall_viiiii"] = createExportWrapper("dynCall_viiiii");
@@ -9696,15 +9696,6 @@ var dynCall_iid = Module["dynCall_iid"] = createExportWrapper("dynCall_iid");
 var dynCall_iiji = Module["dynCall_iiji"] = createExportWrapper("dynCall_iiji");
 
 /** @type {function(...*):?} */
-var dynCall_fii = Module["dynCall_fii"] = createExportWrapper("dynCall_fii");
-
-/** @type {function(...*):?} */
-var dynCall_jij = Module["dynCall_jij"] = createExportWrapper("dynCall_jij");
-
-/** @type {function(...*):?} */
-var dynCall_iij = Module["dynCall_iij"] = createExportWrapper("dynCall_iij");
-
-/** @type {function(...*):?} */
 var dynCall_iiiiiiiiiiiiiiff = Module["dynCall_iiiiiiiiiiiiiiff"] = createExportWrapper("dynCall_iiiiiiiiiiiiiiff");
 
 /** @type {function(...*):?} */
@@ -9712,6 +9703,15 @@ var dynCall_viiiiiiiiiii = Module["dynCall_viiiiiiiiiii"] = createExportWrapper(
 
 /** @type {function(...*):?} */
 var dynCall_iiiiiidiiff = Module["dynCall_iiiiiidiiff"] = createExportWrapper("dynCall_iiiiiidiiff");
+
+/** @type {function(...*):?} */
+var dynCall_fii = Module["dynCall_fii"] = createExportWrapper("dynCall_fii");
+
+/** @type {function(...*):?} */
+var dynCall_jij = Module["dynCall_jij"] = createExportWrapper("dynCall_jij");
+
+/** @type {function(...*):?} */
+var dynCall_iij = Module["dynCall_iij"] = createExportWrapper("dynCall_iij");
 
 /** @type {function(...*):?} */
 var dynCall_vffff = Module["dynCall_vffff"] = createExportWrapper("dynCall_vffff");
