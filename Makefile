@@ -43,8 +43,8 @@ CC = em++
 LD = em++ 
 LD += -s ASYNCIFY
 LD += -s ALLOW_MEMORY_GROWTH=1  
-LD += -s ENVIRONMENT=web
-LD += --preload-file ./onscripter@/
+# LD += -s ENVIRONMENT=web
+# LD += --preload-file ./onscripter@/
 LD += -o
 
 #CFLAGS = -g -Wall -pipe -c $(INCS) $(DEFS) -s TOTAL_MEMORY=1073741824 -s TOTAL_STACK=268435456 --source-map-base http://localhost:8000/ 
